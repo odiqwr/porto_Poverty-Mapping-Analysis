@@ -7,3 +7,6 @@
 # filter by category: (demographic and social statistics, economics)
 # filter by subject per category: (workforce, etc.)
 # select one of the tables then specify the year, category, and row title
+
+# after the data is downloaded, then combine several table data into one complete table
+# rename the table with the file name 'Data Processing.csv'
