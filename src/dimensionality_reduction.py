@@ -1,4 +1,4 @@
-# Uniform Manifold Approximation and Projection Dimensionality Reduction
+# Handling Outliers with Uniform Manifold Approximation and Projection Dimensionality Reduction
 
 # 1. Load CSV dan drop column 'provinsi'
 X = df.drop(columns=['Provinsi'])
@@ -87,4 +87,10 @@ plt.ylabel("Dimensi 2")
 plt.grid(True)
 plt.show()
 
-# Handling Outliers in Dimension 1 and Dimension 2 Columns
+# 14. Checking Outliers After Dimensionality Reduction
+featuresNum = ['Persentase Pelajar_Bekerja','Persentase Pelajar_Belajar','Persentase Tidak/Belum Sekolah','Pekerja Formal (%)','Pekerja Informal (%)','Jumlah Sekolah Atas dan Kejuruan','Jumlah Kampus (Unit)','Jumlah Industri Kecil n Mikro (Unit)','Jumlah Industri Besar n Sedang (Unit)','Upah Minimum Provinsi']
+plt.figure(figsize=(15, 7))
+for i in range(0, len(featuresNum)):
+    plt.subplot(1, len(featuresNum), i+1)
+    sns.boxplot(y=df[featuresNum[i]], color='green', orient='v')
+    plt.tight_layout()
