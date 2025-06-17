@@ -1,25 +1,25 @@
-# Inventory Pattern Optimization (I-POP)
+# Poverty Mapping Analysis (POM-AL)
 
-> Inventory Optimization with Product Reorder Detection Using Unsupervised Learning
+> Evaluation of Socio-economic Policies through Geospatial Analysis of Poverty
 
 ## 🚀 Overview
 
-Many businesses face challenges in managing inventory because it is difficult to predict the timing and quantity of product reorders. Through this project, **I-POP** (*Inventory Product Order Prediction*) is present as a system that utilizes the **Association Rule Learning** method to analyze purchasing patterns and recommend product reorders automatically. This solution helps businesses prevent stock shortages, reduce waste and increase operational efficiency.
+Understanding poverty at a granular, spatial level is essential for designing effective socio-economic policies. Through this project, POM-AL (Poverty Mapping Analysis) presents a system that utilizes geospatial data analysis and unsupervised learning to identify regional poverty patterns and support evidence-based policy evaluation. This system helps governments, NGOs, and researchers target interventions more effectively, optimize resource allocation, and monitor policy impact over time.
 
 ## 🎯 Objectives
 
-- Optimize inventory management by reducing stockouts and overstocks through data-driven reorder recommendations.
-- Apply unsupervised learning (Association Rule Learning) to discover product purchase patterns without labeled data.
-- Build a reusable pipeline for rule extraction and evaluate its integration potential in real-time inventory systems.
+- Deliver a data-driven framework to support strategic planning and evaluation of poverty alleviation policies.
+- Design and implement a geospatial analysis pipeline utilizing unsupervised learning for poverty pattern detection.
+- Integrate analytical results into interactive maps to enhance field-level policy implementation and monitoring.
 
 ## 📊 Dataset
 
-The project using data that from kaggle platform with as follow information:
-- Title : **Grocery Inventory**
-- Description : Sales Dataset Inventory and Sales Data for Grocery Store Management.
-- Publish Date : 03/2025
-- Publisher : Willian Oliveira
-- Link : https://www.kaggle.com/datasets/willianoliveiragibin/grocery-inventory
+The project using data that from Badan Pusat Statistik platform with as follow information:
+- Title : **Human Resources and Infrastructure Data Sources**
+- Description : Demographic, Social, and Economic Statistics 
+- Publish Date : 2023/2024
+- Publisher : Badan Pusat Statistik
+- Link : [Poverty Data](https://www.bps.go.id/id/query-builder)
 
 
 ## 🛠️ Tech Stack
@@ -37,13 +37,13 @@ The project using data that from kaggle platform with as follow information:
   </tr>
   <tr>
     <td>Main library</td>
-    <td>Pandas,NumPy </br>PyFPGrowth </br>Matplotlib,Seaborn</td>
-    <td>For data manipulation and numerical calculations </br> For application FP-Growth Algorithm </br>For graphic visualization and association pattern</td>
+    <td>Pandas,NumPy </br>sklearn </br>Matplotlib,Seaborn </br>scipy</td>
+    <td>For data manipulation and data understanding </br> For data preprocessing and modelling </br>For graphic visualization and association pattern </br>For calculate numerical and statistics analysis</td>
   </tr>
   <tr>
     <td>Tools</td>
-    <td>Google Colab </br>Github </br>Kaggle</td>
-    <td>For cloud-based experiments and notebook execution </br>For controlling, documentation, and collaboration in project </br>To access dataset</td>
+    <td>Jupyter </br>Github </br>Kaggle</td>
+    <td>For notebook execution </br>For controlling, documentation, and collaboration in project </br>To access dataset</td>
   </tr>
 </table>
 
@@ -53,21 +53,22 @@ The project using data that from kaggle platform with as follow information:
 > akan diisi hasil evaluasi model dan aturan yang digunakan
 ## 🧠 Learned
 
-- Implemented FP-Growth for extracting product association rules from transactional data.
-- Performed data preprocessing and transformation tailored for unsupervised learning.
-- Visualized item patterns and rule metrics to support inventory decision-making.
-- Used GitHub and Google Colab for version control and cloud-based experimentation.
+- Integrated and processed multi-source geospatial and socio-economic data.
+- Applied unsupervised clustering (DBSCAN) to identify hidden poverty zones.
+- Used geospatial visualization tools (GeoPandas in Tableau) to map and interpret poverty patterns.
+- Explored the role of spatial analysis in supporting public policy design and evaluation.
 
 ## 🌱 Future Work
 
-- Integrate the model with real-time inventory systems for automated reorder actions.
-- Extend the analysis with temporal and seasonal data to capture dynamic demand patterns.
-- Combine unsupervised and supervised learning to improve prediction accuracy.
+- Includes time-series analysis to monitor poverty trends and seasonal effects.
+- Use causal inference methods to analyze the impact of specific socio-economic policies.
+- Build a dashboard for interactive poverty exploration by policymakers.
+
 ## 👤 Author
 
 | Nama | Peran | GitHub |
 |------|-------|--------|
-| Shodiq Wahyu | ML Developer | [@odiqwr](https://github.com/odiqwr) |
+| Shodiq Wahyu | Researcher | [@odiqwr](https://github.com/odiqwr) |
 
 ## 📄 License
 
